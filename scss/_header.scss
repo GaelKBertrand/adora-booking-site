@@ -41,13 +41,23 @@
                 text-align: left;
             }
             img{
+                max-width: 150px; /* Set a maximum width for the logo */
+                height: auto; /* Maintain the aspect ratio */
+                display: inline-block; /* Ensures proper alignment */
+
                 @media #{$mobile_device} {
                     padding-left: 20px;
-                    width: 70px;
+                    max-width: 70px;
                 }
                 @media #{$tablet_device} {
                     padding-left: 20px;
-                    width: 70px;
+                    max-width: 70px;
+                }
+
+                @media #{$mid_device} {
+                    padding-left: 20px;
+                     max-width: 120px; /* Slightly larger for mid-sized devices */
+
                 }
                
             }
